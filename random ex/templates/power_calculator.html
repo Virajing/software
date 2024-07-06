@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power Calculator</title>
+</head>
+<body>
+    <h1>Power Calculator</h1>
+    <form method="post">
+        <input type="text" name="base" placeholder="Base number">
+        <input type="text" name="exponent" placeholder="Exponent">
+        <button type="submit">Calculate</button>
+    </form>
+    {% if result is not none %}
+    <p>Result: {{ result }}</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to Main Menu</a>
+</body>
+</html>
