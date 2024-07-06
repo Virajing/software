@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Menu</title>
+</head>
+<body>
+    <h1>Main Menu</h1>
+    <ul>
+        <li><a href="{{ url_for('calculator') }}">Calculator</a></li>
+        <li><a href="{{ url_for('power_calculator') }}">Power Calculator</a></li>
+        <li><a href="{{ url_for('word_functionality') }}">Word Functionality</a></li>
+        <li><a href="{{ url_for('web_access', site='google') }}">Google</a></li>
+        <li><a href="{{ url_for('web_access', site='youtube') }}">YouTube</a></li>
+    </ul>
+</body>
+</html>
